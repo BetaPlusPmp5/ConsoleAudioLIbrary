@@ -1,0 +1,135 @@
+<doctype html>
+    <html utf-8>
+        <head>
+            <meta charset="utf-8">
+            <title>Ricoh 2A03 </title>
+            
+            <meta name="description" content="Welcome to the Console Audio Library . The best and only place online for you to find accurate and factual information on all things sound and audio about old video game consoles.">
+
+            <link rel="stylesheet" href="../../../../../assets/css/all.css"/><!-- Asset Icon -->
+
+            <link rel="stylesheet" href="../../Backend/CSS/styles_LibEntry.css" /><!-- Style -->
+            <link rel="stylesheet" href="../../Backend/CSS/style02.css" /><!-- Style -->
+
+            <link rel="stylesheet" href="../../Backend/CSS/News/NewsBox.css" /><!-- News Style Sheet -->
+
+
+            <link rel="stylesheet" href="   ../../Backend/CSS/bootstrap-grid.css" /><!-- Bootstrap grid style sheet -->
+
+            
+            <link rel="stylesheet" href="../../../../Backend/CSS/Search/search.css" /><!-- Search Bar -->
+            <!--External css and Icons-->
+           <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+        </head>
+
+
+
+    
+        
+        <!--Header Container-->
+           <div class="jumbotron header">
+                <div class="Holder">
+                    <div class="logopic">
+                        <a href="../../../index.html">
+                            <img src="../../Media/Images/Beta_Controller.png" 
+                                class="logo-size" 
+                                alt="sLibrary logo" 
+                                title="Return to the home page."
+                                width="230px">
+                        </a>
+                    </div>
+
+                    <div class="header">
+                        <h1 style="font-size: 30px; color:a1f8f8">
+                            Console Audio Library
+                         </h1>
+                    </div>
+                </div>
+            </div>
+        <!--Header Container-->
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="display-4">Welcome to the NES Music room.</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!--Music Room-->
+            <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                <div class="p-3 border rounded bg-light">
+                    <p>
+                        <span style="color:#00ffff;"><strong>Welcome to The Music Room!</strong></span>
+                        <span style="color:#cccccc;">A space to sit back, watch, and listen. Enjoy classic video game music and sound demos directly from the consoles that made them famous.</span>
+                    </p>
+                    <p>
+                        <span style="color:#cccccc;">Use the built-in player to control volume and jump to your favorite parts. This room is all about the experience —</span>
+                        <span style="color:#00ffff;">no tutorials, no guides</span><span style="color:#cccccc;">, just the sounds you love, ready to play.</span>
+                    </p>
+
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!--Player-->
+            <div class="col-sm-12">
+                <div class="news-box">
+        
+            <!-- Video Selector Dropdown -->
+            <label for="videoSelect" style="color:#cccccc;">Choose a video:</label>
+            <select id="videoSelect" onchange="changeVideo()" style="margin-bottom:10px;">
+                <option value="../../Media/Video/Lib/Ref/Super Mario World - Overworld [Oscilloscope Deconstruction] (720p).mp4">Super Mario World - Overworld [Oscilloscope Deconstruction]</option>
+                <option value="../../Media/Video/Lib/Ref/Plok - Title Theme - Oscilloscope Deconstruction (720p).mp4">Plok - Title Theme - Oscilloscope Deconstruction</option>
+                <option value="../../Media/Video/Lib/Ref/2025-07-16 09-51-42.mp4">DR</option>
+            </select>
+
+                <!-- Video Player -->
+                <video id="videoPlayer" width="50%" controls>
+                    <source src="../../Media/Video/Lib/Ref/Super Mario World - Overworld [Oscilloscope Deconstruction] (720p).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+                <div class="news-caption">Video player</div>
+            </div>
+        </div>
+
+        <!-- Video Player switcher script -->
+        <script>
+        function changeVideo() {
+            var player = document.getElementById("videoPlayer");
+            var selector = document.getElementById("videoSelect");
+            player.src = selector.value;
+            player.load();
+            player.play(); // optional – remove this line if you don’t want auto-play
+        }
+        </script>
+
+            
+
+
+
+            <!--Footer container-->
+            <div class="container-fluwid">
+                
+                
+                <div class="row fbg2 spacer6"></div>
+                <div class="row fbg2">
+                    <div class="col-sm-12">
+                        <img src="../../Media/Images/Beta_Controller.png" width="150px">
+                        <p> © 1997 BeetaTech. All rights reserved.**
+                            BeetaTech is a registered trademark. Unauthorized use, reproduction, or distribution of any content, media, or materials from this website is strictly prohibited without prior written consent.
+                            For inquiries, licensing, or permissions, please contact us through our official website: [www.betaplus.com](http://www.betaplus.com)</p>
+                    </div>
+                </div>
+            </div>
+    
+        </body>
+    </html>
+</doctype>
+
+
+    
+                      
+    

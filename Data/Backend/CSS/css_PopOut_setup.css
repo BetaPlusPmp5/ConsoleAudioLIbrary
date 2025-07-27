@@ -1,0 +1,23 @@
+.popout-link {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.popout-img {
+    transition: transform 0.3s ease;
+    box-shadow:0 0 15px rgba(0, 0, 0, 1.75)
+}
+
+
+.popout-link:hover .popout-img {
+    transform: scale(1.2);
+}
+
+.popout-link:hover .popout-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+

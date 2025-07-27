@@ -1,0 +1,329 @@
+<doctype html>
+    <html utf-8>
+        <head>
+            <meta charset="utf-8">
+            <title>SPC700 </title>
+
+            <meta name="description" content="Welcome to the Console Audio Library . The best and only place online for you to find accurate and factual information on all things sound and audio about old video game consoles.">
+
+            <link rel="stylesheet" href="../../../../../assets/css/all.css"/>
+            <link rel="stylesheet" href="../../../../Backend/CSS/styles_LibEntry.css" />
+            <link rel="stylesheet" href="../../../../Backend/CSS/style02.css" />
+            <link rel="stylesheet" href="../../../../Backend/CSS/News/NewsBox.css" />
+            <link rel="stylesheet" href="../../../../Backend/CSS/bootstrap-grid.css" />
+            <link rel="stylesheet" href="../../../../Backend/CSS/Search/search.css" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+        </head>
+
+        <!--Header Container-->
+        <div class="jumbotron header">
+            <div class="Holder">
+                <div class="logopic">
+                    <a href="index.html">
+                        <img src="../../../../Media/Images/Beta_Controller.png" 
+                            class="logo-size" 
+                            alt="Library logo" 
+                            title="Return to the home page."
+                            width="230px">
+                    </a>
+                </div>
+                <div class="header">
+                    <h1 style="font-size: 30px; color:a1f8f8">
+                        Console Audio Library
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!--Nav bar row-->
+        <div class="row text-center">
+            <div class="col-sm-10">
+                <div class="p-nav ">
+                    <a href="../../../About-Us.html">About us</a>
+                    <a href="../../LibSelect.html">Library</a>
+                    <a href="../../../News.html">News Room</a>
+                    <a href="../../../Account/login.html">Account</a>
+                    <a href="../../../Support_Page.html">Support Page</a>
+                </div>
+            </div>    
+            <div class="col-sm-2">
+                <form><div class="Search">
+                    <span class="Icon_Search material-symbols-outlined">search</span>
+                    <input class="Input_Search" 
+                    type="search"
+                    placeholder="Search The Library">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--Header Container-->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="display-4">Sony SPC700 Sound Processing Unit</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Flavor Text-->
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img src="../../../../Media/Images/Library/SPC700 large chip.png" width="110%"  alt="Sony SPC700">
+                </div>
+                <div class="col-md-8">
+                    <div class="p-3 border rounded bg-light">
+                        <p>
+                            The <span style="color:#00ffff;">SPC700</span> is the audio processing unit used in the Super Nintendo Entertainment System (SNES). This chip was revolutionary for its time, allowing games to feature rich, layered, and sample-based music far beyond the bleeps and bloops of earlier consoles. It worked alongside a digital signal processor (DSP) and had its own dedicated 64KB of RAM for audio data.
+                        </p>
+                        <p>
+                            Unlike the NES, the <span style="color:#00ffff;">SPC700</span> is not <span style="color:#00ffff;">monophonic</span>. In fact, it supports <strong>8 channels</strong> of audio, each of which can play <strong>independent digital samples</strong> simultaneously. This means each channel can play different notes and instruments at the same time — one channel can play a bassline, another drums, another voice, etc.
+                        </p>
+                        <p>
+                            The chip uses <span style="color:#00ffff;">ADPCM</span> (Adaptive Differential Pulse Code Modulation) to compress sound samples so they can fit into memory, and the <span style="color:#00ffff;">noise channel</span> is actually a feature of the DSP, which uses noise generation algorithms to simulate sounds like snares and explosions by randomly fluctuating audio waveforms. This gives SNES games their distinctive percussion and ambient effects.
+                        </p>
+                        <p>
+                            A special format called <span style="color:#00ffff;">SPC files</span> lets users rip music from SNES games. These files contain the full state of the SPC700 (its RAM, registers, etc.), and when played back through emulators or music players, they sound exactly like the original game music — because they essentially are.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Library Entry Section-->
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h3 class="mb-3">Basic Information</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Chip Name:</strong> Sony SPC700</li>
+                        <li class="list-group-item"><strong>Manufacturer:</strong> Sony</li>
+                        <li class="list-group-item"><strong>Release Year:</strong> 1990</li>
+                        <li class="list-group-item"><strong>Used In:</strong> Super Nintendo Entertainment System (SNES)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mb-3">Architecture Overview</h3>
+                    <p>
+                        The <span style="color:#00ffff;">SPC700</span> is a dedicated 8-bit microprocessor that controls sound playback on the SNES. It works in conjunction with the <span style="color:#00ffff;">DSP</span> (Digital Signal Processor), which handles actual audio output. Music and effects are stored as compressed samples in RAM, then mixed and played through the 8 available channels. The CPU sends instructions and data to the SPC700 through memory writes, allowing music to change dynamically based on gameplay.
+                    </p>
+                </div>
+            </div>
+
+            <p>
+                Below is a breakdown of how the SNES makes sound using the <strong>SPC700</strong>. It has 8 channels, and each one can be assigned any sample sound. These channels are <span style="color:#00ffff;">polyphonic</span> — meaning multiple notes can be played at the same time across channels.
+            </p>
+
+            <ul>
+                <li><span style="color:#00ffff;">Channel:</span> <span style="color:#cccccc;">The lane used to play one sound or instrument. Each channel can have its own volume, pitch, and effects.</span></li>
+                <li><span style="color:#00ffff;">Sample:</span> <span style="color:#cccccc;">A short, recorded sound like a piano note, drum hit, or voice clip.</span></li>
+                <li><span style="color:#00ffff;">Pitch Control:</span> <span style="color:#cccccc;">Change how high or low the note sounds. Almost all samples can be adjusted to different pitches.</span></li>
+                <li><span style="color:#00ffff;">Envelope:</span> <span style="color:#cccccc;">Controls the shape of a sound — how fast it starts, how long it lasts, and how it fades away.</span></li>
+                <li><span style="color:#00ffff;">Echo:</span> <span style="color:#cccccc;">A repeating version of the sound that trails off, like in a cave or tunnel. SNES used real-time echo effects.</span></li>
+            </ul>
+
+            <p>
+                Composers had access to tools that let them program how each channel behaved — layering instruments, creating sweeping effects, or even simulating surround sound using clever panning and echo.
+            </p>
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <h3 class="mb-3">Sound Channel Breakdown</h3>
+                    <table class="custom-table">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th>Channel</th>
+                            <th>Sample</th>
+                            <th>Volume Control</th>
+                            <th>Pitch Control</th>
+                            <th>Envelope</th>
+                            <th>Echo</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1–8</td>
+                            <td>Any assigned 16-bit sample</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes (Attack, Decay, Sustain, Release)</td>
+                            <td>Yes</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h3 class="mb-3">Technical Summary</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Total Channels:</strong> 8</li>
+                        <li class="list-group-item"><strong>Polyphonic:</strong> Yes — each channel plays one sample at a time, but multiple channels combine for full music</li>
+                        <li class="list-group-item"><strong>Sample Rate:</strong> ~32kHz</li>
+                        <li class="list-group-item"><strong>Output:</strong> Stereo</li>
+                        <li class="list-group-item"><strong>DSP Features:</strong> Echo, filtering, pitch modulation, noise</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mb-3">Limitations</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">Limited RAM (64 KB) for all samples and code</li>
+                        <li class="list-group-item">No real-time streaming — samples must be preloaded</li>
+                        <li class="list-group-item">Noise generation limited to DSP features</li>
+                        <li class="list-group-item">No MIDI compatibility by default</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="spacer3"></div>
+
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <h2 class="mb-3">Modern Development Tools</h2>
+                </div>
+            </div>
+            <div class="spacer5"></div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../../../../Media/Images/Library/Examples/AddMusicK.png" width="100%">
+                </div>
+                <div class="col-md-8">
+                    <div class="card h-100">
+                        <div class="card-body">
+                        <h5 class="card-title">AddmusicK</h5>
+                        <p class="card-text">A tool designed for inserting custom music into SNES ROM hacks, especially Super Mario World. Supports the full SPC engine and samples.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer2"></div>
+
+            <div class="row">
+                <div class="col-md-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                    <h5 class="card-title">SNESGSS</h5>
+                    <p class="card-text">A graphical music sequencer for creating music for the SNES using the SPC700. It mimics the SNES music engine and supports sample importing and echo effects.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="spacer4"></div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">SPCPlay</h5>
+                                <p class="card-text">
+                                SPCPlay is a lightweight SPC player that lets users listen to .spc files from real SNES games. It emulates the SPC700 perfectly, letting composers test their work or enjoy SNES music outside of the console.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <img src="../../../../Media/Images/Library/Examples/SPCPlay.png" width="80%">
+                </div>
+            </div>
+
+               <div class="spacer2"></div>
+
+
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <h2 class="mb-3">Example footage </h2>
+                    </div>
+                </div>
+
+                <div class="spacer5"></div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <video width="100%" controls>
+                            <source src="../../../../Media/Video/Lib/Ref/Super Mario World - Overworld [Oscilloscope Deconstruction] (720p).mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card h-100">
+                            <div class="card-body">
+                            <p class="card-text">
+                                The video beside this text shows how SNES music works by using an oscilloscope to display the sound waves of a real SNES song using the chip. You’ll see all 8 sound channels,  moving in real time as the music plays. This helps you understand what each channel is doing: Watching this video makes it easier to see how all the sounds in an NES song work together like a team.
+                            </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            <div class="spacer2"></div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <a href="../../../Music_Rooms/M_SNES.html   ">Click or Tap here to view an example of what is truely possible on the hardware.</a>    
+            </div>
+        </div>
+
+
+        <div class="spacer2"></div>
+
+        <!--Footer container-->
+        <div class="container-fluwid">
+            <div class="row fbg1">
+                <div class="col-sm-4 text-center">
+                    <h2> Connect With Us</h2>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h2> Partners </h2>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h2> Partner Information</h2>
+                </div>
+            </div>
+
+            
+            <div class="row fbg1">
+                <div class="col-sm-4">
+                    <p class="Text-start"><i class="fa-brands fa-whatsapp"></i> <a href="#">Whatsapp</a></p>
+                    <p class="Text-start"><i class="fa-brands fa-spotify"></i> <a href="#">Spotify</a></p>
+                    <p class="Text-start"><i class="fa-brands fa-youtube"></i> <a href="#">Youtube</a></p>
+                    <p class="Text-start"><i class="fa-brands fa-discord"></i> <a href="#">Discord</a></p>
+                    <p class="Text-start"><i class="fa-solid fa-bell"></i> <a href="#">SnapChat</a></p>
+                </div>
+                <div class="col-sm-4 text-end">
+                    <p>Internet Archive</p>
+                    <p>SMW Central </p>
+                    <p>Atari Team</p>
+                </div>
+                <div class="col-sm-4 text-end">
+                    <p>The largest backup of data available for free on the internet.</p>
+                    <p>The community best known for their incredible work on the SPC700 music and SMW hacking.</p>
+                    <p>They are an incredible community of programmers based on reverse engineering the Atari line of systems.</p>
+                </div>
+            </div>
+            <div class="row fbg2 spacer6"></div>
+            <div class="row fbg2">
+                <div class="col-sm-12">
+                    <img src="../../../../Media/Images/Beta_Controller.png" width="150px">
+                    <p> © 1997 BeetaTech. All rights reserved.
+                        BeetaTech is a registered trademark. Unauthorized use, reproduction, or distribution of any content, media, or materials from this website is strictly prohibited without prior written consent.
+                        For inquiries, licensing, or permissions, please contact us through our official website: [www.betaplus.com](http://www.betaplus.com)</p>
+                </div>
+            </div>
+        </div>
+
+        </body>
+    </html>
+</doctype>
