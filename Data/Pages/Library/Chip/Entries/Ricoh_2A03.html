@@ -64,13 +64,14 @@
                         </div>
                     </div>    
                     <div class="col-sm-2">
-                        <form><div class="Search">
-                            <span class="Icon_Search material-symbols-outlined">search</span>
-                            <input class="Input_Search" 
-                            type="search"
-                            placeholder="Search The LIbrary">
-                            </div>
-                        </form>
+                        <label for="search">Search the Library:</label>
+                            <input list="pages" id="search" name="search" onchange="location = this.value;">
+                            <datalist id="pages">
+                            <option value="Ricoh_2A03.html">NESSound Chip</option>
+                            <option value="SPC700.html">SNES Sound Chip</option>
+                            <option value="../../Console/Entries/NES.html">NES Console</option>
+                            <option value="../../Console/Entries/SNES.html">SNES Console</option>
+                            </datalist>
                     </div>
                 </div>
 
