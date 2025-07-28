@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Page</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #playBtn {
+            position: absolute;
+            background: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 1;
+        }
+        video {
+            max-width: 90%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <button id="playBtn">Play Video</button>
+    <video id="mainVideo">
+        <source src="../../Media/Video/Lib/Ref/HO HO HO! YOU JUST GOT LANCERED! (720p).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        const video = document.getElementById('mainVideo');
+        const btn = document.getElementById('playBtn');
+
+        btn.addEventListener('click', () => {
+            video.play();
+            btn.style.display = 'none';
+        });
+
+        video.addEventListener('ended', () => {
+            window.location.href = "../../../index.html";
+        });
+    </script>
+</body>
+</html>
